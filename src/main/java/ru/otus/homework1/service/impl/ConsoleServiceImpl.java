@@ -1,11 +1,13 @@
 package ru.otus.homework1.service.impl;
 
+import org.springframework.stereotype.Service;
 import ru.otus.homework1.service.ConsoleService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+@Service
 public class ConsoleServiceImpl implements ConsoleService {
 
     public String getAnswer(String question){

@@ -1,5 +1,6 @@
 package ru.otus.homework1.service.impl;
 
+import org.springframework.stereotype.Service;
 import ru.otus.homework1.dao.CsvDao;
 import ru.otus.homework1.model.Question;
 import ru.otus.homework1.service.CsvService;
@@ -7,6 +8,7 @@ import ru.otus.homework1.service.CsvService;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class CsvServiceImpl implements CsvService {
     private CsvDao csvDao;
 

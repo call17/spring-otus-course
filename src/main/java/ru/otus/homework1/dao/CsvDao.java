@@ -1,10 +1,12 @@
 package ru.otus.homework1.dao;
 
 import com.opencsv.CSVReader;
+import org.springframework.stereotype.Repository;
 
 import java.io.*;
 import java.util.List;
 
+@Repository
 public class CsvDao {
 
     public List<String[]> readFile() {
