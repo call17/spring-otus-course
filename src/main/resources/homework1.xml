@@ -4,12 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="consoleService" class="ru.otus.homework1.service.ConsoleService"/>
+    <bean id="consoleService" class="ru.otus.homework1.service.impl.ConsoleServiceImpl"/>
     <bean id="csvDao" class="ru.otus.homework1.dao.CsvDao"/>
-    <bean id="csvService" class="ru.otus.homework1.service.CsvService">
+    <bean id="csvService" class="ru.otus.homework1.service.impl.CsvServiceImpl">
         <constructor-arg ref="csvDao"/>
     </bean>
-    <bean id="testService" class="ru.otus.homework1.service.TestService">
+    <bean id="testService" class="ru.otus.homework1.service.impl.TestServiceImpl">
         <constructor-arg ref="consoleService"/>
         <constructor-arg ref="csvService" />
     </bean>
