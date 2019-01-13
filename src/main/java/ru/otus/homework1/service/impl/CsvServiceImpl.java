@@ -20,7 +20,7 @@ public class CsvServiceImpl implements CsvService {
         List<String[]> csvStrings = csvDao.readFile();
         List<Question> questionList = new ArrayList<>();
         csvStrings.forEach((strings -> {
-            if (strings.length >= 2){
+            if (strings.length >= 2 && !strings[0].isEmpty() && !strings[1].isEmpty()){
                 questionList.add(new Question(strings[0],strings[1]));
             }
         }));
