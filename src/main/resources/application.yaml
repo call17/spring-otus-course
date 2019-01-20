@@ -1,0 +1,8 @@
+en:
+  enter_firstname: "Enter name"
+  enter_lastname: "Enter lastname"
+  result_output: "Test result"
+ru:
+  enter_firstname: "Введите имя"
+  enter_lastname: "Введите фамилию"
+  result_output: "Результаты тестирования"

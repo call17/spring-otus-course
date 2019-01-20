@@ -6,6 +6,7 @@ import ru.otus.homework1.service.ConsoleService;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Locale;
 
 @Service
 public class ConsoleServiceImpl implements ConsoleService {
